@@ -103,3 +103,4 @@ cmake-build-debug
 cmake-build-release-mingw64
 .idea
 */**/*.exe
+*.exe

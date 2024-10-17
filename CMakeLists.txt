@@ -5,5 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(base main.cpp)
 
-add_executable(01.hello c/day01/01.hello.c)
+add_executable(01.hello c/day01/01.hello.c c/day02/scanf_unc.c c/day02/freezing_point.c c/day02/dbg.c)
 add_executable(02 c/day01/02.cpp)
+add_executable(scanf_unc c/day02/scanf_unc.c)
+add_executable(freezing_point c/day02/freezing_point.c)
+add_executable(dbg c/day02/dbg.c)

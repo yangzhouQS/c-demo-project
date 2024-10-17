@@ -451,7 +451,7 @@ printf("%d\n", c == d);
 
 代码块 15. 读写double类型浮点数
 
-```
+```c
 double d;
 
 scanf("%lf", &d);
@@ -462,12 +462,61 @@ printf("%lf", d);
 
 代码块 16. 读写long double类型浮点数
 
-```
+```c
 long double ld;
 
 scanf("%Lf", &ld);
 printf("%Lf", ld);
 ```
+
+
+
+```c
+
+#include <stdio.h>
+
+int main() {
+    printf("int   sizeof = %d \n", sizeof(int)); // 4
+    printf("flot   sizeof = %d \n", sizeof(float)); // 4
+    printf("double sizeof = %d \n", sizeof(double)); // 8
+    printf("long double sizeof = %d \n", sizeof(long double)); // 16
+
+
+    float a = 3141.23456789;
+    printf("a = %.10f \n", a);
+    printf("a = %d \n", (int)a);
+
+    double b = 3141.23456789;
+    printf("b = %.10f \n", b);
+    printf("b = %d \n", ((int)b));
+
+
+    long double c = 3141.23456789L;
+    printf("c = %.10Lf \n", c);
+    printf("c = %d \n", ((int)c));
+
+    return 0;
+}
+```
+
+运行结果
+
+```c
+int   sizeof = 4 
+flot   sizeof = 4 
+double sizeof = 8 
+long double sizeof = 16 
+a = 3141.2346191406 
+a = 3141 
+b = 3141.2345678900 
+b = 3141 
+c = 3141.2345678900 
+c = 3141 
+```
+
+
+
+
 
 ## 浮点数类型能够执行的操作
 

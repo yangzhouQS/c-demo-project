@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-// PI³£Á¿
+// PIå¸¸é‡
 #define PI  3.1415926;
 
 int main() {
@@ -9,9 +9,9 @@ int main() {
     // float s = r * r * PI;
     float s2 = pow(r, 2) * PI;
     float l = 2 * r * PI;
-    printf("°ë¾¶Îª %d µÄÔ²µÄÃæ»ıÎª %.2f£¬ÖÜ³¤Îª%.3f \n", r, s2, l);
+    printf("åŠå¾„ä¸º %d çš„åœ†çš„é¢ç§¯ä¸º %.2fï¼Œå‘¨é•¿ä¸º%.3f \n", r, s2, l);
 
-    printf("³£Á¿Ñ§Ï°\n");
+    printf("å¸¸é‡å­¦ä¹ \n");
 
     return 0;
 }
